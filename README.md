@@ -11,3 +11,14 @@ python3 SSBUFrameAnalyzer.py DIGIT_DICTIONARY_FILE SCREENSHOT_FILE
 
 `DIGIT_DICTIONALY_FILE`はダメージ値の数値画像から計算したHOG特徴量を格納したjsonです（Releasesに添付）。
 
+
+## Requirements
+
+- Tesseract
+    - `apt install tesseract-ocr tesseract-ocr-jpn`
+- pip install -r requirements.txt
+    - Pillow
+    - pyocr
+    - numpy
+    - scikit-image
+

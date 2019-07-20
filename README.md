@@ -11,7 +11,7 @@ python3 SSBUFrameAnalyzer.py DIGIT_DICTIONARY_FILE SCREENSHOT_FILE
 
 `DIGIT_DICTIONALY_FILE`はダメージ値の数値画像から計算したHOG特徴量を格納したjsonです（Releasesに添付）。
 
-いまのところ、2人対戦のみです（領域の切り出しを手打ちでやってるので面倒）。
+いまのところ、2人対戦のみです（領域の切り出しを手打ちでやってるので面倒）。トレーニングも4人対戦の配置なので動かないです（エラーチェックもしてない）。
 
 ## Requirements
 

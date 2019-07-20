@@ -140,7 +140,9 @@ if __name__ == '__main__':
     analyzer = SSBUFrameAnalyzer(digit_classifier=digit_classifier, name_recognizer=name_recognizer)
 
     frame = cv2.imread(args.input, 1) # RGB
-    print(frame.shape)
+    frame = cv2.resize(frame, (1280, 720))
+
+    # print(frame.shape)
     assert frame.shape[1] == 1280 and frame.shape[0] == 720
 
     t = time.time()

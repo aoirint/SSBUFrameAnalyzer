@@ -75,6 +75,9 @@ class SSBUFrameAnalyzer:
                 # cv2.imwrite('fighter-%d-%d.png' % (fighter_idx, bbox_idx, ), dimg)
 
                 digit = predict_digit(dimg)
+                if digit is None:
+                    digit = 0 # placeholder
+
                 end = bbox_idx == len(bboxes)-1
 
                 digit_str = str(digit)

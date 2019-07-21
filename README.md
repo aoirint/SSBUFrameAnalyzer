@@ -4,14 +4,14 @@
 ## Usage
 
 ```
-python3 SSBUFrameAnalyzer.py DIGIT_DICTIONARY_FILE SCREENSHOT_FILE
+python3 SSBUFrameAnalyzer.py DIGIT_DICTIONARY_FILE CHARA_DICTIONARY_FILE SCREENSHOT_FILE
 ```
 
 1280x720のカラー画像のみ受け付けます（mainの場合内部で自動リサイズします）。
 
-`DIGIT_DICTIONALY_FILE`はダメージ値の数値画像から計算したHOG特徴量を格納したjsonです（Releasesに添付）。
+`DIGIT_DICTIONALY_FILE`、`CHARA_DICTIONARY_FILE`はそれぞれ、ダメージ値の数値画像から計算したHOG特徴量、対戦中のキャラ顔画像から計算したHOG特徴量を格納したjsonです（Releasesに添付）。あんまり検証してません。
 
-いまのところ、2人対戦のみです（領域の切り出しを手打ちでやってるので面倒）。トレーニングも4人対戦の配置なので動かないです（エラーチェックもしてない）。
+いまのところ、2人、3人、4人対戦のみです。
 
 ## Requirements
 

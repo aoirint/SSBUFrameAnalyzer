@@ -34,7 +34,7 @@ class SSBUCharaClassifier:
 
     def __call__(self, img, k=3):
         # img isinstance of np.ndarray
-        print(img.shape)
+        # print(img.shape)
         assert len(img.shape) == 2 # gray
         assert img.shape[1] == 110 and img.shape[0] == 110
         h0 = hog(img)

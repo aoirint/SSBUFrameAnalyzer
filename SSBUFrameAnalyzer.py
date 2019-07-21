@@ -164,7 +164,7 @@ class SSBUFrameAnalyzer:
             names, dists = cc(img, k=3)
             min_dist = dists[0]
 
-            print(names, dists)
+            # print(names, dists)
             thresh_dist = 10.
 
             name = names[0] if min_dist < thresh_dist else None

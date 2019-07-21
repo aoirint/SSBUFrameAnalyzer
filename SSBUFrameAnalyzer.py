@@ -117,7 +117,7 @@ class SSBUFrameAnalyzer:
                 dimg = cv2.cvtColor(dimg, cv2.COLOR_BGR2GRAY) # GRAY
                 dimg = cv2.resize(dimg, (35, 55)) # FIXME: magic number
 
-                cv2.imwrite('fighter-dmg-%d-%d.png' % (fighter_idx, bbox_idx, ), dimg)
+                # cv2.imwrite('fighter-dmg-%d-%d.png' % (fighter_idx, bbox_idx, ), dimg)
 
                 digit = predict_digit(dimg)
                 if digit is None:
@@ -148,7 +148,7 @@ class SSBUFrameAnalyzer:
             nimg = frame[bbox[1]:bbox[1]+bbox[3], bbox[0]:bbox[0]+bbox[2]] # RGB
             nimg = cv2.cvtColor(nimg, cv2.COLOR_BGR2GRAY) # GRAY
 
-            cv2.imwrite('fighter-name-%d.png' % (fighter_idx, ), nimg)
+            # cv2.imwrite('fighter-name-%d.png' % (fighter_idx, ), nimg)
 
             name = nr(nimg)
             result[fighter_idx] = name
@@ -177,7 +177,7 @@ class SSBUFrameAnalyzer:
             cimg = frame[bbox[1]:bbox[1]+bbox[3], bbox[0]:bbox[0]+bbox[2]] # RGB
             cimg = cv2.cvtColor(cimg, cv2.COLOR_BGR2GRAY) # GRAY
 
-            cv2.imwrite('fighter-face-%d.png' % (fighter_idx, ), cimg)
+            # cv2.imwrite('fighter-face-%d.png' % (fighter_idx, ), cimg)
 
             name = predict_chara(cimg)
             result[fighter_idx] = name
